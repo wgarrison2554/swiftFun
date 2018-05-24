@@ -3,8 +3,8 @@
 //  Swift Fun
 //
 //  Created by macbook on 5/24/18.
-//  Copyright © 2018 T-rey. All rights reserved.
-//
+//  Copyright © 2018 T-rey. All rights reserved..
+// whats up with the whats up 
 
 import UIKit
 
