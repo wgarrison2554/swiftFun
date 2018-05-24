@@ -17,7 +17,9 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
         buttonCount = buttonCount + 1
-        print(buttonCount)
+        
+   
+        
         if buttonCount >= 10 {view.backgroundColor = UIColor.red
  myLabel.text = "Whats Up" }
           }
@@ -40,7 +42,7 @@ class ViewController: UIViewController {
         
         // Dispose of any resources that can be recreated.
     }
-
+i
 
 }
 
