@@ -12,16 +12,35 @@ class ViewController: UIViewController {
 
     
     
-    var buttonCount = 0
+   // var buttonCount = 0
     @IBOutlet weak var myLabel: UILabel!
     
+    @IBOutlet weak var toptext: UITextField!
+    
+    @IBOutlet weak var AdditionSwitch: UISwitch!
+    @IBOutlet weak var bottomtext: UITextField!
+    
     @IBAction func buttonTapped(_ sender: Any) {
-        buttonCount = buttonCount + 1
+        
+        
+        let addition = AdditionSwitch.isOn
+        
+        if addition {let sum = Double(toptext.text!)! + Double(bottomtext.text!)!
+            
+            myLabel.text = "\(toptext.text!) + \(bottomtext.text!) = \(sum)"} else {   let sum = Double(toptext.text!)! - Double(bottomtext.text!)!
+    
+            myLabel.text = "\(toptext.text!) - \(bottomtext.text!) = \(sum)"}
+        
+        
+        /*
+      
+         
+         buttonCount += 1
         
    
         
         if buttonCount >= 10 {view.backgroundColor = UIColor.red
- myLabel.text = "Whats Up" }
+ myLabel.text = "Whats Up" }*/
           }
     override func viewDidLoad() {
       
@@ -42,7 +61,7 @@ class ViewController: UIViewController {
         
         // Dispose of any resources that can be recreated.
     }
-i
+
 
 }
 
